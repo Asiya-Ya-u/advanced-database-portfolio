@@ -1,0 +1,34 @@
+Placement of the first eight patients
+  ACC-0001 Garba Haruna -> shard-1
+  ACC-0002 Asma'u Musa -> shard-0
+  ACC-0003 Maryam Adamu -> shard-1
+  ACC-0004 Zainab Lawal -> shard-0
+  ACC-0005 Amina Lawal -> shard-1
+  ACC-0006 Safiya Tijjani -> shard-0
+  ACC-0007 Hauwa Shehu -> shard-1
+  ACC-0008 Bashir Shehu -> shard-0
+shard-0 replica caught up 60 patient writes.
+shard-1 replica caught up 60 patient writes.
+
+A new patient is written to the primary and is not yet on the replica
+  shard-0 primary count: 61
+  shard-0 replica count: 60
+  The replica is behind by one row. A report that reads the replica is stale.
+  After applying 1 pending write(s), replica count: 61
+
+Payments stay on the shard that holds the patient
+  shard-0 holds NGN 289430.00 of recorded receipts.
+  shard-1 holds NGN 365355.00 of recorded receipts.
+
+Scatter-gather: how many patients does the clinic have?
+  shard-0 answers 60
+  shard-1 answers 60
+  Combined answer: 120
+
+Shard-1 primary is taken offline
+  shard-1 primary is unavailable
+  Shard-0 still answers. Its primary count is 61.
+  Patients on shard-1 cannot pay or be registered until that primary returns,
+  but the outage does not stop the other half of the register.
+  Shard-1 replica can still be read for enquiry: 60 patients.
+  Those reads may be stale, so the replica is not used to take a payment.
