@@ -1,0 +1,38 @@
+Amana Community Clinic: transaction and concurrency log
+Database copy used for these tests, so the seeded portfolio database is not altered.
+
+1. Successful dispense: commit
+   Paracetamol stock before: 744
+   Paracetamol stock after COMMIT: 738
+   Stock fell by 6, which matches the quantity dispensed.
+
+2. Dispense larger than stock: rollback
+   Paracetamol stock before: 738
+   Transaction rolled back: dispense refused: only 738 packs are on hand
+   Paracetamol stock after ROLLBACK: 738
+   The balance is unchanged, so a failed sale did not corrupt the stock figure.
+
+3. Two appointments in the same minute: constraint abort
+   Existing booking: doctor 2 at 2026-09-03 08:00
+   ROLLBACK after IntegrityError: UNIQUE constraint failed: appointment.doctor_id, appointment.scheduled_at
+   Appointment rows before 428, after 428.
+
+4. Lost update, then the safe alternative
+   Amoxicillin stock at the start: 734
+   After both clerks write their own total: 731
+   Five plus three should have left 726. The stored balance lost the first issue.
+   After two atomic SQL decrements: 726
+   The database, not the client, applied both changes to the latest balance.
+
+5. Two connections and the write lock
+   Connection A holds BEGIN IMMEDIATE and has updated artemether stock.
+   Connection B could not start its write: database is locked
+   B does not read A's uncommitted balance. The lock hides the dirty write.
+   Connection A committed.
+   Connection B then committed its own issue. Artemether stock is now 752.
+   The second writer waited for a committed value instead of overwriting an open transaction.
+
+Isolation note
+SQLite's default locking gives each writer a reserved lock for the whole database file.
+Another connection cannot read the uncommitted change, and it cannot write until COMMIT or ROLLBACK.
+That is stricter than READ UNCOMMITTED and is the behaviour the clinic needs for stock and bookings.
