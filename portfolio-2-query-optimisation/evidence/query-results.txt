@@ -1,0 +1,102 @@
+## patient_by_name
+patient_id | hospital_no | full_name | phone
+10 | ACC-0010 | Amina Musa | 08017984360
+Total rows: 1.
+
+## doctor_day_list
+scheduled_at | status | hospital_no | full_name | reason
+2026-10-06 08:00 | completed | ACC-0039 | Zainab Umar | Abdominal pain
+2026-10-06 08:20 | completed | ACC-0089 | Zainab Shehu | Wound dressing
+2026-10-06 08:40 | completed | ACC-0091 | Hauwa Umar | Fever and headache
+2026-10-07 08:00 | completed | ACC-0004 | Zainab Lawal | Antenatal visit
+2026-10-07 08:20 | completed | ACC-0060 | Sadiq Haruna | Wound dressing
+2026-10-07 08:40 | completed | ACC-0069 | Ahmad Lawal | Skin rash
+2026-10-07 09:00 | completed | ACC-0074 | Safiya Isa | Follow-up of diabetes
+Total rows: 7.
+
+## open_invoices
+hospital_no | full_name | invoice_id | issued_at | amount_due
+ACC-0071 | Ibrahim Bello | 156 | 2026-09-01 08:00 | NGN 6300.00
+ACC-0085 | Khadija Bello | 190 | 2026-09-01 08:00 | NGN 3650.00
+ACC-0103 | Kabir Sani | 220 | 2026-09-01 08:20 | NGN 2500.00
+ACC-0092 | Maryam Umar | 199 | 2026-09-01 08:40 | NGN 6360.00
+ACC-0103 | Kabir Sani | 221 | 2026-09-03 09:00 | NGN 3000.00
+ACC-0024 | Garba Adamu | 53 | 2026-09-09 08:00 | NGN 4300.00
+ACC-0033 | Garba Lawal | 74 | 2026-09-09 08:20 | NGN 2600.00
+ACC-0065 | Fatima Shehu | 142 | 2026-09-09 09:20 | NGN 3980.00
+ACC-0020 | Halima Umar | 42 | 2026-09-10 08:20 | NGN 2580.00
+ACC-0045 | Usman Sani | 101 | 2026-09-11 08:20 | NGN 2685.00
+ACC-0069 | Ahmad Lawal | 150 | 2026-09-14 08:40 | NGN 4540.00
+ACC-0066 | Fatima Danladi | 145 | 2026-09-15 08:00 | NGN 2590.00
+... 46 further row(s) not shown. Total rows: 58.
+
+## low_stock
+name | form | stock_qty | reorder_level | shortfall
+Paracetamol 500 mg | tablet | 744 | 756 | 12
+Artemether-Lumefantrine | tablet | 754 | 766 | 12
+Salbutamol inhaler | inhaler | 760 | 772 | 12
+Total rows: 3.
+
+## diagnosis_frequency
+icd_code | description | cases
+Z34.9 | Supervision of normal pregnancy, unspecified | 68
+A09 | Infectious gastroenteritis | 43
+J06.9 | Acute upper respiratory infection, unspecified | 42
+J45.9 | Asthma, unspecified | 30
+N39.0 | Urinary tract infection | 30
+B50.9 | Plasmodium falciparum malaria, unspecified | 28
+L30.9 | Dermatitis, unspecified | 23
+E11.9 | Type 2 diabetes mellitus without complications | 20
+Total rows: 8.
+
+## patient_history
+started_at | doctor | icd_code | description | notes_summary
+2026-10-01 08:00 | Dr Yusuf Garba | A09 | Infectious gastroenteritis | Seen in clinic. Presenting complaint: child with cough.
+2026-10-15 08:00 | Dr Amina Yusuf | Z34.9 | Supervision of normal pregnancy, unspecified | Seen in clinic. Presenting complaint: antenatal visit.
+2026-11-10 08:00 | Dr Fatima Lawal | J06.9 | Acute upper respiratory infection, unspecified | Seen in clinic. Presenting complaint: child with cough.
+Total rows: 3.
+
+## monthly_revenue
+month | received
+2026-09 | NGN 237025.00
+2026-10 | NGN 232410.00
+2026-11 | NGN 185350.00
+Total rows: 3.
+
+## lab_backlog
+lab_order_id | hospital_no | full_name | test | ordered_at | status
+101 | ACC-0101 | Safiya Abubakar | Pregnancy test | 2026-09-01 08:40 | ordered
+24 | ACC-0021 | Khadija Sani | Widal test | 2026-09-09 08:00 | ordered
+29 | ACC-0024 | Garba Adamu | Malaria rapid diagnostic test | 2026-09-09 08:00 | ordered
+53 | ACC-0053 | Ahmad Bello | Malaria rapid diagnostic test | 2026-09-16 08:40 | ordered
+72 | ACC-0070 | Khadija Yusuf | Malaria rapid diagnostic test | 2026-09-17 08:20 | ordered
+56 | ACC-0057 | Asma'u Adamu | Malaria rapid diagnostic test | 2026-09-24 08:00 | ordered
+58 | ACC-0060 | Sadiq Haruna | Stool microscopy | 2026-09-24 08:20 | ordered
+108 | ACC-0112 | Hauwa Haruna | Random blood sugar | 2026-09-30 08:00 | ordered
+Total rows: 8.
+
+## doctor_workload
+full_name | department | encounters
+Dr Hauwa Bello | General Outpatient | 101
+Dr Musa Danladi | General Outpatient | 98
+Dr Yusuf Garba | Paediatrics | 23
+Dr Ibrahim Sani | Maternal Health | 22
+Dr Fatima Lawal | Paediatrics | 21
+Dr Amina Yusuf | Maternal Health | 19
+Total rows: 6.
+
+## repeat_attenders
+hospital_no | full_name | visits
+ACC-0021 | Khadija Sani | 5
+ACC-0032 | Kabir Lawal | 5
+ACC-0033 | Garba Lawal | 5
+ACC-0045 | Usman Sani | 5
+ACC-0060 | Sadiq Haruna | 5
+ACC-0084 | Safiya Haruna | 5
+ACC-0103 | Kabir Sani | 5
+ACC-0003 | Maryam Adamu | 4
+ACC-0005 | Amina Lawal | 4
+ACC-0011 | Ahmad Haruna | 4
+ACC-0017 | Nafisa Adamu | 4
+ACC-0019 | Hauwa Yusuf | 4
+... 40 further row(s) not shown. Total rows: 52.

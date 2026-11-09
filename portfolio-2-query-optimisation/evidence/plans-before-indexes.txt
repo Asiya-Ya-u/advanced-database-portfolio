@@ -1,0 +1,53 @@
+## patient_by_name
+    SCAN patient
+
+## doctor_day_list
+    SEARCH a USING INDEX sqlite_autoindex_appointment_1 (doctor_id=? AND scheduled_at>? AND scheduled_at<?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+
+## open_invoices
+    SCAN l
+    SEARCH i USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+    USE TEMP B-TREE FOR GROUP BY
+    USE TEMP B-TREE FOR ORDER BY
+
+## low_stock
+    SCAN medication
+    USE TEMP B-TREE FOR ORDER BY
+
+## diagnosis_frequency
+    SCAN d
+    USE TEMP B-TREE FOR GROUP BY
+    USE TEMP B-TREE FOR ORDER BY
+
+## patient_history
+    SCAN e
+    SEARCH s USING INTEGER PRIMARY KEY (rowid=?)
+    BLOOM FILTER ON d (encounter_id=? AND is_primary=?)
+    SEARCH d USING AUTOMATIC PARTIAL COVERING INDEX (encounter_id=? AND is_primary=?) LEFT-JOIN
+    USE TEMP B-TREE FOR ORDER BY
+
+## monthly_revenue
+    SCAN payment
+    USE TEMP B-TREE FOR GROUP BY
+
+## lab_backlog
+    SCAN lo
+    SEARCH t USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH e USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+    USE TEMP B-TREE FOR ORDER BY
+
+## doctor_workload
+    SCAN s
+    SEARCH dep USING INTEGER PRIMARY KEY (rowid=?)
+    BLOOM FILTER ON e (doctor_id=?)
+    SEARCH e USING AUTOMATIC COVERING INDEX (doctor_id=?) LEFT-JOIN
+    USE TEMP B-TREE FOR ORDER BY
+
+## repeat_attenders
+    SCAN e
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+    USE TEMP B-TREE FOR GROUP BY
+    USE TEMP B-TREE FOR ORDER BY

@@ -1,0 +1,49 @@
+## patient_by_name
+    SEARCH patient USING INDEX idx_patient_name (full_name=?)
+
+## doctor_day_list
+    SEARCH a USING INDEX sqlite_autoindex_appointment_1 (doctor_id=? AND scheduled_at>? AND scheduled_at<?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+
+## open_invoices
+    SEARCH i USING INDEX idx_invoice_status (status=?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH l USING INDEX idx_invoice_line_invoice (invoice_id=?)
+    USE TEMP B-TREE FOR ORDER BY
+
+## low_stock
+    SCAN medication
+    USE TEMP B-TREE FOR ORDER BY
+
+## diagnosis_frequency
+    SCAN d USING INDEX idx_diagnosis_code
+    USE TEMP B-TREE FOR GROUP BY
+    USE TEMP B-TREE FOR ORDER BY
+
+## patient_history
+    SEARCH e USING INDEX idx_encounter_patient (patient_id=?)
+    SEARCH s USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH d USING COVERING INDEX idx_diagnosis_encounter (encounter_id=? AND is_primary=?) LEFT-JOIN
+    USE TEMP B-TREE FOR ORDER BY
+
+## monthly_revenue
+    SCAN payment
+    USE TEMP B-TREE FOR GROUP BY
+
+## lab_backlog
+    SEARCH lo USING INDEX idx_lab_order_status_time (status=? AND ordered_at<?)
+    SEARCH t USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH e USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH p USING INTEGER PRIMARY KEY (rowid=?)
+    USE TEMP B-TREE FOR ORDER BY
+
+## doctor_workload
+    SCAN s
+    SEARCH dep USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH e USING COVERING INDEX idx_encounter_doctor (doctor_id=?) LEFT-JOIN
+    USE TEMP B-TREE FOR ORDER BY
+
+## repeat_attenders
+    SCAN p
+    SEARCH e USING COVERING INDEX idx_encounter_patient (patient_id=?)
+    USE TEMP B-TREE FOR ORDER BY
