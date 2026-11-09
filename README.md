@@ -6,7 +6,12 @@
 **Session:** 2026/2027, First Semester  
 **Assessment:** Individual Practical Database Portfolio (40 marks)
 
+**GitHub profile:** https://github.com/Asiya-Ya-u  
+**Repository:** https://github.com/Asiya-Ya-u/advanced-database-portfolio
+
 The case study used in every activity is **Amana Community Clinic**, a simulated primary-care clinic in Kano. Patients, staff, and visits are generated. They are not records of a real clinic.
+
+This repository is the practical portfolio. It contains the clinic design, the SQL and query plans, the transaction tests, the NoSQL examples, the distributed-database simulation, and a short written summary of all five activities.
 
 ## How to rebuild the evidence
 

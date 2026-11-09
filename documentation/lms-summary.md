@@ -8,7 +8,10 @@
 **Session:** 2026/2027, First Semester  
 **Case study:** Amana Community Clinic (simulated)
 
-This note covers the five practical activities and the reflection. The scripts, schema, plans, and logs are in the GitHub repository described in the README. The same case study is used throughout.
+This note covers the five practical activities and the reflection. The same case study is used throughout.
+
+**GitHub profile:** https://github.com/Asiya-Ya-u  
+**Repository:** https://github.com/Asiya-Ya-u/advanced-database-portfolio (branch `master`)
 
 ## The organisation
 
@@ -44,7 +47,7 @@ The useful constraint was not the number of tables. It was deciding which facts 
 
 ## Repository
 
-The work is arranged as `portfolio-1-database-design` through `portfolio-5-distributed-cloud`, with `README.md` at the root. `python run_all.py` rebuilds the database and the evidence. The GitHub repository should be private, and the marker should be given access before the LMS deadline.
+The work is arranged as `portfolio-1-database-design` through `portfolio-5-distributed-cloud`, with `README.md` at the root. `python run_all.py` rebuilds the database and the evidence. The reviewer’s starting point is the GitHub profile https://github.com/Asiya-Ya-u and the repository https://github.com/Asiya-Ya-u/advanced-database-portfolio. The repository should be private, with the reviewer added as a collaborator, before the LMS deadline.
 
 ## AI-use declaration
 
