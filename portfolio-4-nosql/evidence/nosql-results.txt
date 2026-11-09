@@ -1,0 +1,23 @@
+NoSQL evidence for Amana Community Clinic
+
+Document collection size: 24
+Notes that carry an antenatal object: [8, 11, 22]
+Notes with temperature at or above 38.0 C: [{'encounter_id': 5, 'patient': 'ACC-0003', 'temperature_c': 38.1}, {'encounter_id': 10, 'patient': 'ACC-0004', 'temperature_c': 38.1}, {'encounter_id': 15, 'patient': 'ACC-0006', 'temperature_c': 38.1}, {'encounter_id': 20, 'patient': 'ACC-0009', 'temperature_c': 38.1}]
+
+The antenatal and paediatric notes do not have the same fields as a general note.
+A relational table would have needed nullable columns, or a new table, for each service.
+
+Key-value cache holds 47 open balances.
+Lookup ACC-0009 -> NGN 3605.00 without joining invoice tables again.
+
+Column-family style lab sheet, first three row keys:
+  encounter 4: {'WIDAL': 'See laboratory worksheet'}
+  encounter 5: {'MRDT': 'See laboratory worksheet'}
+  encounter 6: {'PT': 'See laboratory worksheet'}
+
+Referral graph edges found from the visit sequence: 8
+  ACC-0105 Ahmad Abubakar: Dr Musa Danladi (2026-09-02 09:00) -[REFERRED]-> Dr Fatima Lawal / Paediatrics (2026-09-14 08:40)
+  ACC-0053 Ahmad Bello: Dr Musa Danladi (2026-09-16 08:40) -[REFERRED]-> Dr Yusuf Garba / Paediatrics (2026-09-23 08:00)
+  ACC-0011 Ahmad Haruna: Dr Hauwa Bello (2026-09-03 08:00) -[REFERRED]-> Dr Yusuf Garba / Paediatrics (2026-09-25 08:00)
+  ACC-0011 Ahmad Haruna: Dr Musa Danladi (2026-09-22 08:00) -[REFERRED]-> Dr Yusuf Garba / Paediatrics (2026-09-25 08:00)
+  ACC-0017 Nafisa Adamu: Dr Hauwa Bello (2026-09-17 08:00) -[REFERRED]-> Dr Fatima Lawal / Paediatrics (2026-09-25 08:00)

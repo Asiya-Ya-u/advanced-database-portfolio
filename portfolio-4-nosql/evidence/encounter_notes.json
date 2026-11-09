@@ -1,0 +1,550 @@
+[
+  {
+    "encounter_id": 1,
+    "recorded_at": "2026-10-15 08:00",
+    "patient": {
+      "hospital_no": "ACC-0001",
+      "full_name": "Garba Haruna",
+      "sex": "M"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: follow-up of diabetes.",
+    "assessment": [
+      {
+        "icd_code": "A09",
+        "text": "Infectious gastroenteritis"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.5,
+      "pulse": 72,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 2,
+    "recorded_at": "2026-10-30 08:00",
+    "patient": {
+      "hospital_no": "ACC-0001",
+      "full_name": "Garba Haruna",
+      "sex": "M"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: abdominal pain.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.9,
+      "pulse": 73,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 3,
+    "recorded_at": "2026-11-20 08:00",
+    "patient": {
+      "hospital_no": "ACC-0001",
+      "full_name": "Garba Haruna",
+      "sex": "M"
+    },
+    "author": "Dr Fatima Lawal",
+    "department": "Paediatrics",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: child with cough.",
+    "assessment": [
+      {
+        "icd_code": "J06.9",
+        "text": "Acute upper respiratory infection, unspecified"
+      }
+    ],
+    "growth": {
+      "weight_kg": 9.4,
+      "muac_cm": 13
+    }
+  },
+  {
+    "encounter_id": 4,
+    "recorded_at": "2026-10-14 08:00",
+    "patient": {
+      "hospital_no": "ACC-0002",
+      "full_name": "Asma'u Musa",
+      "sex": "F"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: follow-up of diabetes.",
+    "assessment": [
+      {
+        "icd_code": "B50.9",
+        "text": "Plasmodium falciparum malaria, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.7,
+      "pulse": 75,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 5,
+    "recorded_at": "2026-09-02 08:00",
+    "patient": {
+      "hospital_no": "ACC-0003",
+      "full_name": "Maryam Adamu",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: antenatal visit.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 38.1,
+      "pulse": 76,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 6,
+    "recorded_at": "2026-10-06 08:00",
+    "patient": {
+      "hospital_no": "ACC-0003",
+      "full_name": "Maryam Adamu",
+      "sex": "F"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: wound dressing.",
+    "assessment": [
+      {
+        "icd_code": "L30.9",
+        "text": "Dermatitis, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.5,
+      "pulse": 77,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 7,
+    "recorded_at": "2026-10-28 08:00",
+    "patient": {
+      "hospital_no": "ACC-0003",
+      "full_name": "Maryam Adamu",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: abdominal pain.",
+    "assessment": [
+      {
+        "icd_code": "A09",
+        "text": "Infectious gastroenteritis"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.9,
+      "pulse": 78,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 8,
+    "recorded_at": "2026-11-20 08:00",
+    "patient": {
+      "hospital_no": "ACC-0003",
+      "full_name": "Maryam Adamu",
+      "sex": "F"
+    },
+    "author": "Dr Ibrahim Sani",
+    "department": "Maternal Health",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: antenatal visit.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "antenatal": {
+      "gestation_weeks": 19,
+      "fundal_height_cm": 21,
+      "fetal_heart_heard": true
+    }
+  },
+  {
+    "encounter_id": 9,
+    "recorded_at": "2026-09-21 08:00",
+    "patient": {
+      "hospital_no": "ACC-0004",
+      "full_name": "Zainab Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: skin rash.",
+    "assessment": [
+      {
+        "icd_code": "L30.9",
+        "text": "Dermatitis, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.7,
+      "pulse": 80,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 10,
+    "recorded_at": "2026-10-07 08:00",
+    "patient": {
+      "hospital_no": "ACC-0004",
+      "full_name": "Zainab Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: antenatal visit.",
+    "assessment": [
+      {
+        "icd_code": "J45.9",
+        "text": "Asthma, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 38.1,
+      "pulse": 81,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 11,
+    "recorded_at": "2026-09-28 08:00",
+    "patient": {
+      "hospital_no": "ACC-0005",
+      "full_name": "Amina Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Amina Yusuf",
+    "department": "Maternal Health",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: antenatal visit.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "antenatal": {
+      "gestation_weeks": 22,
+      "fundal_height_cm": 24,
+      "fetal_heart_heard": true
+    }
+  },
+  {
+    "encounter_id": 12,
+    "recorded_at": "2026-11-11 08:00",
+    "patient": {
+      "hospital_no": "ACC-0005",
+      "full_name": "Amina Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: follow-up of diabetes.",
+    "assessment": [
+      {
+        "icd_code": "A09",
+        "text": "Infectious gastroenteritis"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.9,
+      "pulse": 83,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 13,
+    "recorded_at": "2026-11-16 08:00",
+    "patient": {
+      "hospital_no": "ACC-0005",
+      "full_name": "Amina Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: child with cough.",
+    "assessment": [
+      {
+        "icd_code": "N39.0",
+        "text": "Urinary tract infection"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.3,
+      "pulse": 84,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 14,
+    "recorded_at": "2026-11-17 08:00",
+    "patient": {
+      "hospital_no": "ACC-0005",
+      "full_name": "Amina Lawal",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: abdominal pain.",
+    "assessment": [
+      {
+        "icd_code": "J45.9",
+        "text": "Asthma, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.7,
+      "pulse": 85,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 15,
+    "recorded_at": "2026-11-10 08:00",
+    "patient": {
+      "hospital_no": "ACC-0006",
+      "full_name": "Safiya Tijjani",
+      "sex": "F"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: follow-up of diabetes.",
+    "assessment": [
+      {
+        "icd_code": "J45.9",
+        "text": "Asthma, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 38.1,
+      "pulse": 86,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 16,
+    "recorded_at": "2026-11-12 08:00",
+    "patient": {
+      "hospital_no": "ACC-0006",
+      "full_name": "Safiya Tijjani",
+      "sex": "F"
+    },
+    "author": "Dr Yusuf Garba",
+    "department": "Paediatrics",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: child with cough.",
+    "assessment": [
+      {
+        "icd_code": "B50.9",
+        "text": "Plasmodium falciparum malaria, unspecified"
+      }
+    ],
+    "growth": {
+      "weight_kg": 10.1,
+      "muac_cm": 13
+    }
+  },
+  {
+    "encounter_id": 17,
+    "recorded_at": "2026-09-02 08:00",
+    "patient": {
+      "hospital_no": "ACC-0007",
+      "full_name": "Hauwa Shehu",
+      "sex": "F"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: skin rash.",
+    "assessment": [
+      {
+        "icd_code": "A09",
+        "text": "Infectious gastroenteritis"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 36.9,
+      "pulse": 88,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 18,
+    "recorded_at": "2026-10-16 08:20",
+    "patient": {
+      "hospital_no": "ACC-0008",
+      "full_name": "Bashir Shehu",
+      "sex": "M"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: follow-up of diabetes.",
+    "assessment": [
+      {
+        "icd_code": "J45.9",
+        "text": "Asthma, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.3,
+      "pulse": 89,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 19,
+    "recorded_at": "2026-10-12 08:00",
+    "patient": {
+      "hospital_no": "ACC-0009",
+      "full_name": "Yusuf Isa",
+      "sex": "M"
+    },
+    "author": "Dr Musa Danladi",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: wound dressing.",
+    "assessment": [
+      {
+        "icd_code": "J06.9",
+        "text": "Acute upper respiratory infection, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.7,
+      "pulse": 90,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 20,
+    "recorded_at": "2026-10-28 08:20",
+    "patient": {
+      "hospital_no": "ACC-0009",
+      "full_name": "Yusuf Isa",
+      "sex": "M"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: routine check.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 38.1,
+      "pulse": 91,
+      "blood_pressure": "118/76"
+    }
+  },
+  {
+    "encounter_id": 21,
+    "recorded_at": "2026-10-01 08:00",
+    "patient": {
+      "hospital_no": "ACC-0010",
+      "full_name": "Amina Musa",
+      "sex": "F"
+    },
+    "author": "Dr Yusuf Garba",
+    "department": "Paediatrics",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: child with cough.",
+    "assessment": [
+      {
+        "icd_code": "A09",
+        "text": "Infectious gastroenteritis"
+      }
+    ],
+    "growth": {
+      "weight_kg": 13.6,
+      "muac_cm": 13
+    }
+  },
+  {
+    "encounter_id": 22,
+    "recorded_at": "2026-10-15 08:00",
+    "patient": {
+      "hospital_no": "ACC-0010",
+      "full_name": "Amina Musa",
+      "sex": "F"
+    },
+    "author": "Dr Amina Yusuf",
+    "department": "Maternal Health",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: antenatal visit.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "antenatal": {
+      "gestation_weeks": 13,
+      "fundal_height_cm": 19,
+      "fetal_heart_heard": true
+    }
+  },
+  {
+    "encounter_id": 23,
+    "recorded_at": "2026-11-10 08:00",
+    "patient": {
+      "hospital_no": "ACC-0010",
+      "full_name": "Amina Musa",
+      "sex": "F"
+    },
+    "author": "Dr Fatima Lawal",
+    "department": "Paediatrics",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: child with cough.",
+    "assessment": [
+      {
+        "icd_code": "J06.9",
+        "text": "Acute upper respiratory infection, unspecified"
+      }
+    ],
+    "growth": {
+      "weight_kg": 15.0,
+      "muac_cm": 13
+    }
+  },
+  {
+    "encounter_id": 24,
+    "recorded_at": "2026-09-03 08:00",
+    "patient": {
+      "hospital_no": "ACC-0011",
+      "full_name": "Ahmad Haruna",
+      "sex": "M"
+    },
+    "author": "Dr Hauwa Bello",
+    "department": "General Outpatient",
+    "presenting_complaint": "Seen in clinic. Presenting complaint: abdominal pain.",
+    "assessment": [
+      {
+        "icd_code": "Z34.9",
+        "text": "Supervision of normal pregnancy, unspecified"
+      }
+    ],
+    "vitals": {
+      "temperature_c": 37.7,
+      "pulse": 75,
+      "blood_pressure": "118/76"
+    }
+  }
+]
