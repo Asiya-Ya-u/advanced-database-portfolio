@@ -24,4 +24,4 @@ Portfolio 4. NoSQL and other models. Clinical notes are stored as documents beca
 
 Portfolio 5. Distributed and cloud databases. Patients are split across two shards by patient number. Each shard has a primary and a replica. The log shows replica lag, a count that has to ask both shards, and what still works when one primary is unavailable.
 
-The longer written account, including the reflection, references, and AI-use declaration, is in documentation/lms-summary.pdf. Running "python run_all.py" rebuilds the database and the evidence files.
+The longer written account, including the reflection, references, and AI-use declaration, is in documentation/lms-summary.pdf. Supporting screenshots of the query results, the plans, the transaction log, the NoSQL output, and the cluster log are in documentation/screenshots. Running "python run_all.py" rebuilds the database and the evidence files.

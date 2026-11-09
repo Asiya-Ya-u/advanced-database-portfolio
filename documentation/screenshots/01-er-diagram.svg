@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
+  <rect width="1100" height="760" fill="#f7f6f2"/>
+  <text x="40" y="36" font-family="Georgia, serif" font-size="22" fill="#1c2430">Amana Community Clinic</text>
+  <text x="40" y="58" font-family="Calibri, sans-serif" font-size="13" fill="#445">Entity-relationship diagram. Asiya Ya'u, 2026/A/MIT/0763. Crow's foot: one to many.</text>
+
+  <g font-family="Calibri, sans-serif" font-size="13" fill="#1c2430">
+    <g>
+      <rect x="40" y="90" width="180" height="64" rx="6" fill="#1f4e46"/>
+      <text x="130" y="118" text-anchor="middle" fill="#fff" font-weight="700">DEPARTMENT</text>
+      <text x="130" y="138" text-anchor="middle" fill="#d7ebe6" font-size="11">name, location</text>
+    </g>
+    <g>
+      <rect x="320" y="90" width="180" height="64" rx="6" fill="#1f4e46"/>
+      <text x="410" y="118" text-anchor="middle" fill="#fff" font-weight="700">STAFF</text>
+      <text x="410" y="138" text-anchor="middle" fill="#d7ebe6" font-size="11">role, licence, phone</text>
+    </g>
+    <g>
+      <rect x="600" y="90" width="180" height="64" rx="6" fill="#1f4e46"/>
+      <text x="690" y="118" text-anchor="middle" fill="#fff" font-weight="700">PATIENT</text>
+      <text x="690" y="138" text-anchor="middle" fill="#d7ebe6" font-size="11">folder no, name, phone</text>
+    </g>
+    <g>
+      <rect x="880" y="90" width="180" height="64" rx="6" fill="#8a5a12"/>
+      <text x="970" y="118" text-anchor="middle" fill="#fff" font-weight="700">APPOINTMENT</text>
+      <text x="970" y="138" text-anchor="middle" fill="#f6e7cf" font-size="11">time, status, reason</text>
+    </g>
+
+    <g>
+      <rect x="40" y="250" width="180" height="64" rx="6" fill="#8a5a12"/>
+      <text x="130" y="278" text-anchor="middle" fill="#fff" font-weight="700">ENCOUNTER</text>
+      <text x="130" y="298" text-anchor="middle" fill="#f6e7cf" font-size="11">one per attended visit</text>
+    </g>
+    <g>
+      <rect x="320" y="250" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="410" y="278" text-anchor="middle" fill="#fff" font-weight="700">DIAGNOSIS</text>
+      <text x="410" y="298" text-anchor="middle" fill="#d5e0f0" font-size="11">ICD code, primary flag</text>
+    </g>
+    <g>
+      <rect x="600" y="250" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="690" y="278" text-anchor="middle" fill="#fff" font-weight="700">PRESCRIPTION</text>
+      <text x="690" y="298" text-anchor="middle" fill="#d5e0f0" font-size="11">pending or dispensed</text>
+    </g>
+    <g>
+      <rect x="880" y="250" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="970" y="278" text-anchor="middle" fill="#fff" font-weight="700">PRESCRIPTION ITEM</text>
+      <text x="970" y="298" text-anchor="middle" fill="#d5e0f0" font-size="11">dose, quantity</text>
+    </g>
+
+    <g>
+      <rect x="40" y="420" width="180" height="64" rx="6" fill="#1f4e46"/>
+      <text x="130" y="448" text-anchor="middle" fill="#fff" font-weight="700">MEDICATION</text>
+      <text x="130" y="468" text-anchor="middle" fill="#d7ebe6" font-size="11">price, stock, reorder</text>
+    </g>
+    <g>
+      <rect x="320" y="420" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="410" y="448" text-anchor="middle" fill="#fff" font-weight="700">STOCK MOVEMENT</text>
+      <text x="410" y="468" text-anchor="middle" fill="#d5e0f0" font-size="11">receipt or dispense</text>
+    </g>
+    <g>
+      <rect x="600" y="420" width="180" height="64" rx="6" fill="#1f4e46"/>
+      <text x="690" y="448" text-anchor="middle" fill="#fff" font-weight="700">LAB TEST</text>
+      <text x="690" y="468" text-anchor="middle" fill="#d7ebe6" font-size="11">code, price</text>
+    </g>
+    <g>
+      <rect x="880" y="420" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="970" y="448" text-anchor="middle" fill="#fff" font-weight="700">LAB ORDER</text>
+      <text x="970" y="468" text-anchor="middle" fill="#d5e0f0" font-size="11">status, result</text>
+    </g>
+
+    <g>
+      <rect x="180" y="590" width="180" height="64" rx="6" fill="#8a5a12"/>
+      <text x="270" y="618" text-anchor="middle" fill="#fff" font-weight="700">INVOICE</text>
+      <text x="270" y="638" text-anchor="middle" fill="#f6e7cf" font-size="11">open, paid, or void</text>
+    </g>
+    <g>
+      <rect x="460" y="590" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="550" y="618" text-anchor="middle" fill="#fff" font-weight="700">INVOICE LINE</text>
+      <text x="550" y="638" text-anchor="middle" fill="#d5e0f0" font-size="11">description, amount</text>
+    </g>
+    <g>
+      <rect x="740" y="590" width="180" height="64" rx="6" fill="#243652"/>
+      <text x="830" y="618" text-anchor="middle" fill="#fff" font-weight="700">PAYMENT</text>
+      <text x="830" y="638" text-anchor="middle" fill="#d5e0f0" font-size="11">method, receipt no</text>
+    </g>
+  </g>
+
+  <g stroke="#5c6b73" stroke-width="1.4" fill="#5c6b73" font-family="Calibri, sans-serif" font-size="11">
+    <line x1="220" y1="122" x2="320" y2="122"/>
+    <text x="250" y="114" stroke="none">1</text><text x="300" y="114" stroke="none">*</text>
+
+    <line x1="780" y1="122" x2="880" y2="122"/>
+    <text x="800" y="114" stroke="none">1</text><text x="860" y="114" stroke="none">*</text>
+
+    <line x1="500" y1="122" x2="600" y2="154"/>
+    <polyline points="600,90 690,90 690,90" fill="none"/>
+
+    <line x1="970" y1="154" x2="970" y2="230"/>
+    <line x1="970" y1="230" x2="220" y2="250"/>
+    <text x="560" y="236" stroke="none">appointment 1  0..1 encounter</text>
+
+    <line x1="220" y1="282" x2="320" y2="282"/>
+    <text x="250" y="274" stroke="none">1</text><text x="300" y="274" stroke="none">*</text>
+
+    <line x1="780" y1="282" x2="880" y2="282"/>
+    <text x="810" y="274" stroke="none">1</text><text x="860" y="274" stroke="none">*</text>
+
+    <line x1="130" y1="484" x2="320" y2="452"/>
+    <text x="180" y="458" stroke="none">1  *</text>
+
+    <line x1="780" y1="452" x2="880" y2="452"/>
+    <text x="810" y="444" stroke="none">1</text><text x="860" y="444" stroke="none">*</text>
+
+    <line x1="270" y1="590" x2="270" y2="530"/>
+    <text x="278" y="560" stroke="none">visit 1  * lines, and 1  * payments</text>
+  </g>
+
+  <text x="40" y="730" font-family="Calibri, sans-serif" font-size="12" fill="#445">Green boxes are reference data. Brown boxes are the visit and the bill. Blue boxes are the detail that hangs off a visit. A clinical note is not a box here: it is a document keyed by encounter and folder number.</text>
+</svg>
